@@ -58,6 +58,7 @@ export const resumeData = {
       name: "Churn Prediction Model",
       description: "Built an end-to-end churn prediction pipeline on a 10,000-record bank customer dataset.",
       highlights: [
+        "Built an end-to-end churn prediction pipeline on a 10,000-record bank customer dataset using Python (Pandas, NumPy, scikit-learn, TensorFlow) in Jupyter Notebook.",
         "Compared 4 classification algorithms (Logistic Regression, Random Forest, XGBoost, Neural Network); achieved 86% accuracy with the TensorFlow neural network — a 6% improvement over the baseline.",
         "Created EDA visualizations (heatmaps, churn distribution charts) using Matplotlib and Seaborn, surfacing top 5 churn drivers including tenure, balance, and product count."
       ],
@@ -67,7 +68,7 @@ export const resumeData = {
       name: "Sales Performance Dashboard (Power BI)",
       description: "Developed an interactive Power BI dashboard on a 5,000-row retail sales dataset.",
       highlights: [
-        "Integrating slicers, drill-through pages, and DAX measures to track revenue, regional trends, and YoY growth.",
+        "Developed an interactive Power BI dashboard on a 5,000-row retail sales dataset, integrating slicers, drill-through pages, and DAX measures to track revenue, regional trends, and YoY growth.",
         "Connected to a PostgreSQL backend and used Power Query for data transformation, enabling automated daily refresh and eliminating manual Excel-based reporting."
       ],
       keywords: ["Power BI", "PostgreSQL", "Power Query", "DAX"]
@@ -76,7 +77,7 @@ export const resumeData = {
       name: "SQL-Based E-Commerce Analysis",
       description: "Analyzed customer LTV, product return rates, and seasonal demand patterns using complex SQL.",
       highlights: [
-        "Wrote 20+ complex SQL queries (CTEs, window functions, subqueries) on a multi-table e-commerce database.",
+        "Wrote 20+ complex SQL queries (CTEs, window functions, subqueries) on a multi-table e-commerce database to analyze customer LTV, product return rates, and seasonal demand patterns.",
         "Documented findings in a structured report with visualizations, identifying a 22% revenue opportunity from cross-sell recommendations."
       ],
       keywords: ["SQL", "CTEs", "Window Functions", "Data Analysis"]
