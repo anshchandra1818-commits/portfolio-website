@@ -10,7 +10,6 @@ import { AnimatedBackground } from './components/AnimatedBackground';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/sections/Hero';
 import { Experience } from './components/sections/Experience';
-import { Achievements } from './components/sections/Achievements';
 import { Projects } from './components/sections/Projects';
 import { Skills } from './components/sections/Skills';
 import { Education } from './components/sections/Education';
@@ -40,10 +39,6 @@ export default function App() {
                 <Hero />
               </div>
               
-              <div id="achievements">
-                <Achievements />
-              </div>
-
               <div id="experience">
                 <Experience />
               </div>

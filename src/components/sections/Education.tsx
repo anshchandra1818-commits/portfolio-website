@@ -23,13 +23,39 @@ export const Education: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-8">
           <h3 className="text-2xl font-bold text-white flex items-center gap-3 mb-8">
+            <Award className="w-6 h-6 text-emerald-400" /> Certifications
+          </h3>
+          
+          <div className="grid gap-4">
+            {resumeData.certifications.map((cert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group p-6 rounded-2xl border border-slate-800 bg-slate-900/30 backdrop-blur-xl hover:border-emerald-500/30 transition-all flex items-center gap-4"
+              >
+                <div className="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                  <Award className="w-5 h-5" />
+                </div>
+                <p className="text-slate-300 font-medium group-hover:text-white transition-colors">
+                  {cert}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-8">
+          <h3 className="text-2xl font-bold text-white flex items-center gap-3 mb-8">
             <GraduationCap className="w-6 h-6 text-blue-400" /> Academic Journey
           </h3>
           
           {resumeData.education.map((edu, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
@@ -52,32 +78,6 @@ export const Education: React.FC = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        <div className="space-y-8">
-          <h3 className="text-2xl font-bold text-white flex items-center gap-3 mb-8">
-            <Award className="w-6 h-6 text-emerald-400" /> Certifications
-          </h3>
-          
-          <div className="grid gap-4">
-            {resumeData.certifications.map((cert, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group p-6 rounded-2xl border border-slate-800 bg-slate-900/30 backdrop-blur-xl hover:border-emerald-500/30 transition-all flex items-center gap-4"
-              >
-                <div className="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
-                  <Award className="w-5 h-5" />
-                </div>
-                <p className="text-slate-300 font-medium group-hover:text-white transition-colors">
-                  {cert}
-                </p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

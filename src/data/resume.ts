@@ -4,7 +4,7 @@ export const resumeData = {
     label: "Data Analyst",
     email: "anshchandra1818@gmail.com",
     phone: "7428555497",
-    summary: "IT Engineering graduate with hands-on experience in data engineering, analytics, and dashboard development. Proficient in Python, SQL, ETL workflows, and creating interactive Power BI and Tableau dashboards. Worked with large datasets to automate pipelines, optimize queries, and deliver actionable insights through dynamic visualizations. Actively seeking data-focused roles where I can build scalable solutions and support impactful decision-making.",
+    summary: "Data Analyst & Cloud Enthusiast with experience in AWS migrations, predictive modeling, and interactive data visualization. Passionate about turning complex data into actionable business insights.",
     location: "Jaipur, India",
     profiles: [
       {
@@ -20,11 +20,11 @@ export const resumeData = {
   work: [
     {
       company: "Airish Technologies",
-      position: "Cloud Engineer",
+      position: "Analyst",
       startDate: "January 2025",
-      endDate: "April 2025",
+      endDate: "June 2025",
       highlights: [
-        "Advised clients on suitable AWS services and led end-to-end migration of 5+ websites/applications from on-premise and alternative cloud platforms to AWS, reducing infrastructure costs by 20 percent.",
+        "Analysed client business and Advised suitable AWS services and led end-to-end migration of websites/applications from on-premise and alternative cloud platforms to AWS, reducing infrastructure costs by 20 percent.",
         "Configured AWS infrastructure by using AWS services and ensured smooth deployment and testing, cutting average go-live time by 30 percent"
       ],
       metrics: ["20% Cost Reduction", "30% Faster Go-Live"]
@@ -37,7 +37,8 @@ export const resumeData = {
       highlights: [
         "Cleaned and preprocessed a 3,000-row website traffic dataset using Azure Databricks, PySpark, Pandas, and NumPy, reducing data inconsistencies by 95%.",
         "Performed analysis of user sessions, engagement metrics, and traffic sources via PySpark aggregations and SQL queries, identifying 3 key drop-off points in the user journey.",
-        "Built heatmaps, engagement trend charts, and traffic-pattern visualizations using Matplotlib and Seaborn, directly informing a content strategy that improved average session duration by 15%."
+        "Built heatmaps, engagement trend charts, and traffic-pattern visualizations using Matplotlib and Seaborn, directly informing a content strategy that improved average session duration by 15%.",
+        "Built dashboard using React and TypeScript, deployed via Vercel."
       ],
       metrics: ["95% Data Accuracy", "15% Session Increase"]
     },
@@ -47,46 +48,43 @@ export const resumeData = {
       startDate: "June 2023",
       endDate: "September 2023",
       highlights: [
-        "Extracted and cleaned a 4,000-datapoint dataset using Excel, reducing erroneous entries by 90 percent before loading into PostgreSQL for structured querying.",
-        "Designed and delivered a fully dynamic Power BI dashboard connected to PostgreSQL, enabling real-time visualization of 10+ KPIs and cutting manual reporting time by 50%"
+        "Built an end-to-end churn prediction pipeline on a 10,000-record bank customer dataset using Python (Pandas, NumPy, Scikit-learn, TensorFlow) in Jupyter Notebook.",
+        "Compared 4 classification algorithms (Logistic Regression, Random Forest, XGBoost, Neural Network); achieved 86% accuracy with the TensorFlow neural network — a 6% improvement over baseline.",
+        "Created EDA visualizations (heatmaps, churn distribution charts) using Matplotlib and Seaborn, identifying top churn drivers such as tenure, balance, and product count."
       ],
-      metrics: ["90% Error Reduction", "50% Time Saved"]
+      metrics: ["86% Accuracy", "6% Improvement"]
     }
   ],
   projects: [
     {
-      name: "Churn Prediction Model",
-      description: "Built an end-to-end churn prediction pipeline on a 10,000-record bank customer dataset.",
+      name: "Emotion Detection",
+      description: "Built an image-based emotion recognition system using a dataset of 35,000 images.",
       highlights: [
-        "Built an end-to-end churn prediction pipeline on a 10,000-record bank customer dataset using Python (Pandas, NumPy, scikit-learn, TensorFlow) in Jupyter Notebook.",
-        "Compared 4 classification algorithms (Logistic Regression, Random Forest, XGBoost, Neural Network); achieved 86% accuracy with the TensorFlow neural network — a 6% improvement over the baseline.",
-        "Created EDA visualizations (heatmaps, churn distribution charts) using Matplotlib and Seaborn, surfacing top 5 churn drivers including tenure, balance, and product count."
+        "Built an image-based emotion recognition system using a dataset of 35,000 images labeled across 7 emotions (happy, sad, angry, surprise, fear, disgust, neutral).",
+        "Developed and trained a Convolutional Neural Network (CNN) model to classify facial emotions from uploaded images.",
+        "Performed image preprocessing (resizing, normalization, augmentation) to improve model performance and generalization.",
+        "Enabled real-time emotion prediction from user-uploaded images with high classification accuracy."
       ],
-      keywords: ["Python", "Pandas", "NumPy", "scikit-learn", "TensorFlow", "Jupyter Notebook"]
+      keywords: ["Python", "CNN", "Deep Learning", "Image Processing", "TensorFlow"]
     },
     {
-      name: "Sales Performance Dashboard (Power BI)",
-      description: "Developed an interactive Power BI dashboard on a 5,000-row retail sales dataset.",
+      name: "Power BI Dashboard",
+      description: "Designed and developed interactive Power BI dashboards with KPIs and dynamic visualizations.",
       highlights: [
-        "Developed an interactive Power BI dashboard on a 5,000-row retail sales dataset, integrating slicers, drill-through pages, and DAX measures to track revenue, regional trends, and YoY growth.",
-        "Connected to a PostgreSQL backend and used Power Query for data transformation, enabling automated daily refresh and eliminating manual Excel-based reporting."
+        "Cleaned and preprocessed raw datasets using Python (Pandas, NumPy) by handling missing values, duplicates, and data inconsistencies.",
+        "Performed exploratory data analysis (EDA) and feature engineering to identify trends and improve data quality.",
+        "Extracted and transformed data using SQL queries to generate meaningful business insights.",
+        "Designed and developed interactive Power BI dashboards with KPIs, slicers, and dynamic visualizations.",
+        "Created calculated measures using DAX to track key metrics such as revenue, user behavior, or churn rate.",
+        "Enabled data-driven decision-making by presenting insights through clear and actionable visual reports."
       ],
-      keywords: ["Power BI", "PostgreSQL", "Power Query", "DAX"]
-    },
-    {
-      name: "SQL-Based E-Commerce Analysis",
-      description: "Analyzed customer LTV, product return rates, and seasonal demand patterns using complex SQL.",
-      highlights: [
-        "Wrote 20+ complex SQL queries (CTEs, window functions, subqueries) on a multi-table e-commerce database to analyze customer LTV, product return rates, and seasonal demand patterns.",
-        "Documented findings in a structured report with visualizations, identifying a 22% revenue opportunity from cross-sell recommendations."
-      ],
-      keywords: ["SQL", "CTEs", "Window Functions", "Data Analysis"]
+      keywords: ["Power BI", "SQL", "DAX", "Python", "EDA", "Data Visualization"]
     }
   ],
   skills: [
     {
       name: "Programming",
-      keywords: ["Python", "SQL", "PySpark", "C/C++", "HTML/CSS"]
+      keywords: ["Python", "SQL", "PySpark", "C/C++", "HTML/CSS", "Machine Learning"]
     },
     {
       name: "Libraries & Visualization",
@@ -94,11 +92,11 @@ export const resumeData = {
     },
     {
       name: "Databases",
-      keywords: ["MySQL", "PostgreSQL", "Sql WorkBench"]
+      keywords: ["MySQL", "PostgreSQL", "MySQL Workbench"]
     },
     {
       name: "Cloud & Tools",
-      keywords: ["AWS", "Jupyter Notebook", "PyCharm", "Power BI", "Power Query", "Databricks"]
+      keywords: ["AWS", "Jupyter Notebook", "PyCharm", "Power BI", "Tableau", "Power Query", "Databricks"]
     },
     {
       name: "Miscellaneous",
@@ -131,23 +129,5 @@ export const resumeData = {
   certifications: [
     "Data Analytics Certificate – IIT Roorkee",
     "AWS Partner: Accreditation (Technical)"
-  ],
-  achievements: [
-    {
-      title: "86% Accuracy in Churn Prediction",
-      context: "Achieved with TensorFlow neural network, a 6% improvement over baseline."
-    },
-    {
-      title: "95% Reduction in Data Inconsistencies",
-      context: "Cleaned 3,000-row dataset using PySpark and Azure Databricks."
-    },
-    {
-      title: "50% Reduction in Reporting Time",
-      context: "Automated dynamic Power BI dashboard for DRDO."
-    },
-    {
-      title: "20% Infrastructure Cost Savings",
-      context: "Led AWS migration for 5+ applications at Airish Technologies."
-    }
   ]
 };
