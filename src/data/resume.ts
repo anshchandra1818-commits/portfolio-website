@@ -1,10 +1,10 @@
 export const resumeData = {
   basics: {
     name: "Ansh Chandra",
-    label: "Cloud Engineer & Data Analyst",
+    label: "Data Analyst",
     email: "anshchandra1818@gmail.com",
     phone: "7428555497",
-    summary: "Cloud Engineer and Data Analyst with experience in AWS migration, data preprocessing, and visualization. Proficient in Python, SQL, and PySpark, with a strong background in building predictive models and dynamic dashboards to drive business insights.",
+    summary: "IT Engineering graduate with hands-on experience in data engineering, analytics, and dashboard development. Proficient in Python, SQL, ETL workflows, and creating interactive Power BI and Tableau dashboards. Worked with large datasets to automate pipelines, optimize queries, and deliver actionable insights through dynamic visualizations. Actively seeking data-focused roles where I can build scalable solutions and support impactful decision-making.",
     location: "Jaipur, India",
     profiles: [
       {

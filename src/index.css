@@ -6,6 +6,18 @@
 }
 
 @layer base {
+  @media print {
+    body {
+      background: white !important;
+      color: black !important;
+    }
+    .print\:hidden {
+      display: none !important;
+    }
+    .print\:block {
+      display: block !important;
+    }
+  }
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;

@@ -14,6 +14,7 @@ import { Achievements } from './components/sections/Achievements';
 import { Projects } from './components/sections/Projects';
 import { Skills } from './components/sections/Skills';
 import { Education } from './components/sections/Education';
+import { ResumePrint } from './components/ResumePrint';
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,38 +32,42 @@ export default function App() {
             transition={{ duration: 1 }}
             className="relative z-10"
           >
-            <AnimatedBackground />
-            <Navigation />
-            
-            <div id="hero">
-              <Hero />
-            </div>
-            
-            <div id="achievements">
-              <Achievements />
+            <div className="print:hidden">
+              <AnimatedBackground />
+              <Navigation />
+              
+              <div id="hero">
+                <Hero />
+              </div>
+              
+              <div id="achievements">
+                <Achievements />
+              </div>
+
+              <div id="experience">
+                <Experience />
+              </div>
+
+              <div id="projects">
+                <Projects />
+              </div>
+
+              <div id="skills">
+                <Skills />
+              </div>
+
+              <div id="education">
+                <Education />
+              </div>
+
+              <footer className="py-12 px-4 border-t border-slate-900/50 text-center">
+                <p className="text-sm text-slate-500 font-mono tracking-widest uppercase">
+                  &copy; {new Date().getFullYear()} Ansh Chandra • Built with Precision
+                </p>
+              </footer>
             </div>
 
-            <div id="experience">
-              <Experience />
-            </div>
-
-            <div id="projects">
-              <Projects />
-            </div>
-
-            <div id="skills">
-              <Skills />
-            </div>
-
-            <div id="education">
-              <Education />
-            </div>
-
-            <footer className="py-12 px-4 border-t border-slate-900/50 text-center">
-              <p className="text-sm text-slate-500 font-mono tracking-widest uppercase">
-                &copy; {new Date().getFullYear()} Ansh Chandra • Built with Precision
-              </p>
-            </footer>
+            <ResumePrint />
           </motion.div>
         )}
       </AnimatePresence>

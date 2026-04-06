@@ -48,12 +48,13 @@ export const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
 
-          <button
-            onClick={() => window.print()}
+          <a
+            href="/resume.pdf"
+            download="Ansh_Chandra_Resume.pdf"
             className="px-8 py-4 bg-slate-900 text-white font-bold rounded-full border border-slate-800 hover:bg-slate-800 transition-all flex items-center gap-2 hover:scale-105 active:scale-95"
           >
             <Download className="w-4 h-4" /> Download Resume
-          </button>
+          </a>
         </div>
 
         <div className="flex items-center justify-center gap-6">
